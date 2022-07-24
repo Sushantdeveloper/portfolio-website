@@ -5,58 +5,35 @@
     /* color:black ; */
 
 }
+@media screen and (max-width:600px) {
+    .project{
+        width: 90%;  
+        margin-left:0;
+     }
+     .border-button{
+            left: 70%;
+        }
+        .skills-container-1{
+            width: 100%;
+            display: grid
+    ;}  
+  
+    .sidebar{
+        transform: translate(-443,0);
+        position: absolute;
+    }
+   
+
+}
+
 html{
     scroll-behavior: smooth;
 }
-/* @media screen and (max-width:600px) {
-    .main{
-    margin-right: 10rem;
-        width:100%;
-        
-    }
-    .sidebar{
-        width: 100%;
-        height: 4rem;
-    }
-    .hello{
-        font-size: 65px;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-    .info{
-    
-         margin-top: 0px; 
-        display: flex;
-        justify-content: space-around;
-    }
-    
-    .sinfo{
-        justify-content: center;
-        margin-top: 10px;
-    }
-    
-    .name{
-    font-size: 5px;
-    margin-top: 1px;
-    }
-     .sinfo p{ 
-        font-size: 40px;
-     }
-    .about{
-        font-size: 25px;
-       margin-top: 2px;
-    }
-    .moreabout{
-        margin-top: 2px;
-        font-size: 20px;
-        margin-left: 6px;
-    } */
-
                            /* style side bar  */
 .sidebar{
     background-color: rgb(32, 32, 32);
     width: 15vw;
     height: 41rem;
-    /* color: rgb(242, 242, 243); */
     position: absolute;
     animation: slide-down 0.5s ease;
 }
@@ -435,10 +412,10 @@ background-position: center;
 background-size: auto;
 }
 .next::after{
-    background-image: url(./angle-right.svg);
+    background-image: url(./resource/angle-right.svg);
 }
 .prev::after{
-    background-image: url(./angle-left.svg);
+    background-image: url(./resource/angle-left.svg);
 }
  
 
@@ -498,30 +475,7 @@ color: gray;
 }
                                         /* media querrys  */
 
-@media screen and (max-width:600px) {
-    .project{
-        width: 90%;  
-        margin-left:0;
-     }
-     .border-button{
-            left: 70%;
-        }
-        .skills-container-1{
-            width: 100%;
-            display: grid
-    ;}   
-.container{
-    display: grid;
 
-}
-.sidebar{
-    position: relative;
-}
-
-.info{
-    display: grid;
-} 
-}
 /* style footer section  */
 .fotter-section{
     background-color: rgb(32, 32, 32);
@@ -621,4 +575,10 @@ padding: 10px 10px;
     height: 30px;
     color: aliceblue;
     /* background-color:rgba(172, 170, 170, 0.966) ; */
+}
+@media screen and (max-width:600px) {
+ .contact{
+    display: flex;
+    flex-direction: column;
+ }
 }
