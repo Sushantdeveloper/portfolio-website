@@ -190,12 +190,26 @@ function prevblog(){
 next.addEventListener("click" ,nextblog);
 prev.addEventListener("click" ,prevblog);
 display(index);
+      // js for the nav slide bar 
+      const menu =document.querySelector(".nav-list ");
+      const starticon=document.querySelector(".hamburger");
+      const closeicon=document.querySelector(".close");
+       
+    starticon.addEventListener("click",showmenu);
+    closeicon.addEventListener("click",closemenu)
+  
 
-// js for form 
-const submit=document.querySelectorAll(".submit-form");
-submit.addEventListener("click",sndmssg);
-
-
-const sndmssg=()=>{
+ function showmenu(){
+  starticon.style.display="none";
+  closeicon.style.transform="translateX(0rem)";
+  menu.style.transform="translateX(0rem)";
+ }
+ function closemenu(){
  
-}
+  closeicon.style.transform="translateX(-20rem)";
+  menu.style.transform="translateX(-20rem)";
+  starticon.style.display="flex";
+ }
+
+
+ 
